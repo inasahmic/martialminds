@@ -48,8 +48,11 @@ const Hero = () => {
 
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer" onClick={scrollToIntro}>
-        <div className="bg-gradient-to-r from-accent to-amber-500 p-3 rounded-full shadow-lg hover:shadow-xl transition-all">
+      <div className="absolute bottom-8 inset-x-0 flex justify-center">
+        <div 
+          className="bg-gradient-to-r from-accent to-amber-500 p-3 rounded-full shadow-lg hover:shadow-xl transition-all animate-bounce cursor-pointer" 
+          onClick={scrollToIntro}
+        >
           <svg
             className="w-6 h-6 text-white"
             fill="none"
