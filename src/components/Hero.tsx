@@ -12,14 +12,6 @@ const Hero = () => {
 
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-amber-50/30 to-slate-100">
-      {/* Background Image with Modern Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center opacity-20"
-        style={{
-          backgroundImage: 'url(/me-1.jpeg)',
-        }}
-      />
-      
       {/* Modern Gradient Mesh */}
       <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-amber-500/10" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-200/20 via-transparent to-transparent" />
