@@ -73,7 +73,7 @@ const Contact = () => {
             <div className="bg-gray-50 rounded-2xl p-8 h-full flex flex-col justify-center">
               <div className="text-center mb-8">
                 <img
-                  src="/logo.jpeg"
+                  src={`${import.meta.env.BASE_URL}logo.jpeg`}
                   alt="Martial Minds Logo"
                   className="h-32 w-32 mx-auto rounded-full shadow-xl border-4 border-accent mb-6"
                 />

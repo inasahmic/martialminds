@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto">
         <div className="mb-6 md:mb-8 animate-fade-in">
           <img
-            src="/logo.jpeg"
+            src={`${import.meta.env.BASE_URL}logo.jpeg`}
             alt="Martial Minds Logo"
             className="h-24 w-24 sm:h-28 sm:w-28 md:h-32 md:w-32 mx-auto rounded-full shadow-2xl ring-4 ring-accent/30 mb-4 md:mb-6"
           />
@@ -48,7 +48,7 @@ const Hero = () => {
 
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer" onClick={scrollToIntro}>
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer" onClick={scrollToIntro}>
         <div className="bg-gradient-to-r from-accent to-amber-500 p-3 rounded-full shadow-lg hover:shadow-xl transition-all">
           <svg
             className="w-6 h-6 text-white"

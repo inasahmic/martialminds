@@ -132,7 +132,7 @@ const Services = ({ onServiceClick }: ServicesProps) => {
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="flex justify-center mb-6">
                 <img
-                  src="/fresh-minds.jpeg"
+                  src={`${import.meta.env.BASE_URL}fresh-minds.jpeg`}
                   alt="Fresh Minds"
                   className="h-28 w-28 rounded-full object-cover shadow-md"
                 />
@@ -149,7 +149,7 @@ const Services = ({ onServiceClick }: ServicesProps) => {
             <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="flex justify-center mb-6">
                 <img
-                  src="/birkman.webp"
+                  src={`${import.meta.env.BASE_URL}birkman.webp`}
                   alt="Official Birkman Consultant"
                   className="h-28 object-contain"
                 />

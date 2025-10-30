@@ -31,7 +31,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2 md:space-x-3">
             <img
-              src="/logo.jpeg"
+              src={`${import.meta.env.BASE_URL}logo.jpeg`}
               alt="Martial Minds Logo"
               className="h-10 w-10 md:h-14 md:w-14 rounded-full object-cover shadow-lg ring-2 ring-accent/50"
             />

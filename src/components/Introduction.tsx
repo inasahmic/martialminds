@@ -26,7 +26,7 @@ const Introduction = () => {
           </div>
           <div className="relative order-1 md:order-2">
             <img
-              src="/me-2.jpeg"
+              src={`${import.meta.env.BASE_URL}me-2.jpeg`}
               alt="Praxis"
               className="rounded-lg shadow-2xl w-full object-contain max-h-[400px] md:max-h-none mx-auto"
             />
