@@ -73,9 +73,9 @@ const Contact = () => {
             <div className="bg-gray-50 rounded-2xl p-8 h-full flex flex-col justify-center">
               <div className="text-center mb-8">
                 <img
-                  src={`${import.meta.env.BASE_URL}me-2.jpeg`}
-                  alt="Azra Mujcinovic"
-                  className="h-48 w-48 mx-auto rounded-2xl shadow-xl border-4 border-accent mb-6 object-cover"
+                  src={`${import.meta.env.BASE_URL}logo.jpeg`}
+                  alt="Martial Minds Logo"
+                  className="h-32 w-32 mx-auto rounded-full shadow-xl border-4 border-accent mb-6"
                 />
                 <h3 className="text-3xl font-bold text-primary mb-2">Martial Minds</h3>
                 <p className="text-lg text-gray-600">Praxis für Psychotherapie</p>

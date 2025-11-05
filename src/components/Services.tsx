@@ -5,7 +5,7 @@ interface ServicesProps {
 }
 
 const Services = ({ onServiceClick }: ServicesProps) => {
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
   
   const services = [
     {
@@ -117,6 +117,29 @@ const Services = ({ onServiceClick }: ServicesProps) => {
               </div>
             </button>
           ))}
+        </div>
+
+        {/* Personal Touch Section */}
+        <div className="mt-20 mb-20 bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 md:p-12 shadow-lg">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="flex-shrink-0">
+              <img
+                src={`${import.meta.env.BASE_URL}me-2.jpeg`}
+                alt="Azra Mujcinovic"
+                className="w-64 md:w-80 rounded-2xl shadow-xl object-contain"
+              />
+            </div>
+            <div className="flex-1 text-center md:text-left">
+              <h3 className="text-2xl md:text-3xl font-bold text-primary mb-4">
+                {language === 'de' ? 'Individuelle Begleitung auf Ihrem Weg' : 'Individual Support on Your Journey'}
+              </h3>
+              <p className="text-lg text-gray-700 leading-relaxed">
+                {language === 'de' 
+                  ? 'Jeder Mensch ist einzigartig – und so auch der Weg zur inneren Balance. Mit Empathie, Fachkompetenz und einem ganzheitlichen Ansatz begleite ich Sie dabei, Ihre persönlichen Ziele zu erreichen.'
+                  : 'Every person is unique – and so is the path to inner balance. With empathy, expertise, and a holistic approach, I support you in achieving your personal goals.'}
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Partnerships & Certifications */}
