@@ -1,4 +1,7 @@
+import { useLanguage } from '../contexts/LanguageContext'
+
 const Footer = () => {
+  const { t } = useLanguage()
   const currentYear = new Date().getFullYear()
 
   return (
@@ -15,8 +18,8 @@ const Footer = () => {
               <span className="text-xl font-bold">Martial Minds</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Praxis für Psychotherapie<br />
-              (Nach dem Heilpraktikergesetz)
+              {t.footer.practiceTitle}<br />
+              {t.footer.practiceSubtitle}
             </p>
             <a 
               href="https://www.instagram.com/_martialminds_" 
@@ -36,10 +39,10 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-4 text-accent">Kontakt</h4>
+            <h4 className="text-lg font-bold mb-4 text-accent">{t.footer.contactTitle}</h4>
             <div className="space-y-2 text-gray-300">
               <p>Azra Mujcinovic, M.Sc.</p>
-              <p>Heilpraktikerin für Psychotherapie</p>
+              <p>{t.footer.contactProfession}</p>
               <p className="pt-2">
                 <a href="tel:01751427016" className="hover:text-accent transition-colors">
                   Tel. 0175 1427016
@@ -54,28 +57,29 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-4 text-accent">Qualifikationen</h4>
+            <h4 className="text-lg font-bold mb-4 text-accent">{t.footer.qualificationsTitle}</h4>
             <ul className="space-y-2 text-gray-300 text-sm">
-              <li>• Master of Science in Social Psychology</li>
-              <li>• EMDR-Therapeutin</li>
-              <li>• Zertifizierter Birkman Coach</li>
-              <li>• Psychologische Birthchart Readerin</li>
-              <li>• 3. Dan Kuk Sool Won</li>
+              {t.footer.qualifications.map((qualification, index) => (
+                <li key={index}>• {qualification}</li>
+              ))}
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-700 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-400 text-sm">
-              © {currentYear} Martial Minds. Alle Rechte vorbehalten.
-            </p>
+            <div className="text-gray-400 text-sm">
+              <p className="mb-2">© {currentYear} Martial Minds. {t.footer.copyright}</p>
+              <p className="text-xs text-gray-500">
+                {t.footer.impressum}: Azra Mujcinovic | Wilhelminenstr. 14b | 47475 Kamp-Lintfort
+              </p>
+            </div>
             <div className="flex items-center space-x-6 text-sm text-gray-400">
               <button 
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="hover:text-accent transition-colors flex items-center space-x-2"
               >
-                <span>Nach oben</span>
+                <span>{t.footer.backToTop}</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />
                 </svg>

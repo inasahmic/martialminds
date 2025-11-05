@@ -26,8 +26,8 @@ const Introduction = () => {
           </div>
           <div className="relative order-1 md:order-2">
             <img
-              src={`${import.meta.env.BASE_URL}me-2.jpeg`}
-              alt="Praxis"
+              src={`${import.meta.env.BASE_URL}me-1.jpeg`}
+              alt="Azra Mujcinovic"
               className="rounded-lg shadow-2xl w-full object-contain max-h-[400px] md:max-h-none mx-auto"
             />
           </div>
@@ -62,6 +62,7 @@ const Introduction = () => {
           <div className="bg-gray-50 rounded-xl p-6 md:p-8 space-y-4">
             <p className="text-gray-700 leading-relaxed">{t.introduction.targetGroupsDescription}</p>
             <p className="text-gray-700 leading-relaxed">{t.introduction.targetGroupsDescription2}</p>
+            <p className="text-gray-700 leading-relaxed italic text-primary">{t.introduction.languagesNote}</p>
             <p className="text-gray-700 leading-relaxed font-medium">{t.introduction.costsNote}</p>
           </div>
         </div>
