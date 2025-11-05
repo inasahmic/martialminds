@@ -22,7 +22,7 @@ const About = () => {
             
             <div className="relative">
               <img
-                src={`${import.meta.env.BASE_URL}me-2.jpeg`}
+                src={`${import.meta.env.BASE_URL}me-3.jpeg`}
                 alt="Azra Mujcinovic"
                 className="rounded-2xl shadow-2xl w-full object-contain max-h-[400px] md:max-h-none mx-auto"
               />
